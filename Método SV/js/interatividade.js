@@ -8,23 +8,41 @@ var titulo = $("h1");
 var subtitulo = $("#subtitulo");
 var icones = $("svg");
 var fundo = $("body");
+var botao_modoescuro = $ ("#modoescuro");
+
+var modoescuro = false
+
 
 //PROCESSAMENTO
 
-//SAIDA
-    titulo.click(()=>{
-    botoes.css( "background-color" , "black");
-    });
+botao_modoescuro.click(()=>{
 
-    titulo.dblclick(()=>{
-    fundo.html("<h1> alterado pelo js </h1>");
-    });
+    if( modoescuro == false ) {
 
-subtitulo.click(()=>{
-icones.css("fill" , "black")
+        botoes.css( "background-color" , "rgb(125, 22, 51)");
+        botoes.css("color" , "white");
+
+        modoescuro = true;
+
+    }else{
+
+        botoes.css( "background-color" , "rgb(57, 8, 26)");
+        botoes.css("color" , "white");
+
+        modoescuro = false;
+
+    }
+
+
 });
 
 
+botao_modoescuro.click(()=>{
+
+    icones.css("color" , "rgb(57, 8, 26)")
+    
+
+});
 
 
 });
