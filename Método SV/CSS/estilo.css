@@ -4,8 +4,8 @@
  
 body{
    
-    background-image: url("../Recursos/IMG/purple\ plaid\ background.jpg");
-    background-size: 600px;
+    background-image: url("../Recursos/IMG/pexels-mdsnmdsnmdsn-1831234.jpg");
+    background-size: 1000px;
  
     display: flex;
     flex-direction: column;
@@ -20,16 +20,16 @@ width: 200px;
 height: 200px;
  
 border-radius: 200px;
-border:10px double rgb(125, 22, 51); /*Engloba todos os de cima*/
+border:10px double rgb(180, 38, 88); /*Engloba todos os de cima*/
  
-box-shadow: 10px 5px 20px rgba(0, 0, 0, 10);
+box-shadow: 10px 2px 20px rgba(0, 0, 0, 10);
  
 }
  
  
 .titulos {
  
-color: white;
+color: rgb(139, 4, 51);;
 text-align: center;
  
 }
@@ -73,16 +73,16 @@ justify-content: center;
  
 .botao{
  
-    background-color:  rgb(125, 22, 51);
-    color: white;
+    background-color:  rgb(255, 174, 197);
+    color: rgb(139, 4, 51);
     font-family: "Lobster Two", sans-serif;
     border: none;
     font-size: 30px;
     margin:10px;
     padding: 20px;
-    width: 400px;
+    width: 500px;
     border-radius: 40px;
-    box-shadow: 5px 5px 10px rgb(21, 1, 8);
+    box-shadow: 5px 5px 10px rgb(180, 38, 88);
     transition: 0.3s;
     cursor: pointer;
  
@@ -90,7 +90,7 @@ justify-content: center;
  
 .botao:hover{
  
-    background-color: rgb(100, 9, 38);
+    background-color: rgb(212, 71, 116);
     font-size: 40px;
    
  
@@ -120,7 +120,7 @@ margin: 10px;
  
 svg:hover{
  
-    fill: rgb(100, 9, 38);
+    fill: rgb(212, 71, 116);
     cursor: pointer;
  
     transform: scale(1.2);
@@ -135,4 +135,27 @@ svg:hover{
      right: 10px;
  
 }
+
+@media (max-width: 600px){ /* MOBILE*/
+ 
+    .botao{
+ 
+        width: 400px;
+       
+ 
+    }
+ 
+}
+
+@media (max-width: 800px){ /*TABLET*/
+ 
+.botao{
+    width: 400px;
+ 
+ 
+}
+ 
+ 
+}
+ 
  

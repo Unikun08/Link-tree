@@ -8,7 +8,8 @@ var titulo = $("h1");
 var subtitulo = $("#subtitulo");
 var icones = $("svg");
 var fundo = $("body");
-var botao_modoescuro = $ ("#modoescuro");
+var botao_modoescuro = $("#modoescuro");
+var terceiro_titulo = $("h3");
 
 var modoescuro = false
 
@@ -19,21 +20,34 @@ botao_modoescuro.click(()=>{
 
     if(modoescuro == false ){
 
-        botoes.css("background-color","rgb(57, 8, 26)");
+        botoes.css("background-color","rgb(77, 0, 13)");
         botoes.css("color","white");
 
-        fundo.css("background-image","url('https://i.pinimg.com/736x/d6/bd/2d/d6bd2d6d5f9937c1e52e66354a110c8e.jpg')")
-
+        fundo.css("background-image","url('https://i.pinimg.com/736x/7b/64/37/7b6437d1f16f761028af10ef244e6726.jpg')")
+        titulo.css("color","white");
+        subtitulo.css("color" , "white")
+        terceiro_titulo.css("color", "white")
+        icones.css("fill", "white")
+        
+       
+        
+        
         modoescuro = true
 
 
     }else{
 
-        botoes.css( "background-color","rgb(125, 22, 51)");
-        botoes.css("color","white");
+        botoes.css( "background-color","rgb(255, 174, 197)");
+        botoes.css("color","rgb(139, 4, 51)");
+        fundo.css("background-image" , "url('https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg')")
+        
+        fundo.css("background-size" , "1000px")
 
-        fundo.css("background-image","url('https://i.pinimg.com/736x/29/ed/80/29ed8045f52712cdd6bfe79318c55802.jpg')")
-
+        titulo.css("color","rgb(139, 4, 51)");
+        subtitulo.css("color" , "rgb(139, 4, 51)")
+        terceiro_titulo.css("color", "rgb(139, 4, 51)")
+        icones.css("fill", "white");     
+ 
         modoescuro = false
 
     }
@@ -42,7 +56,7 @@ botao_modoescuro.click(()=>{
 });
 
 
-botao_modoescuro.click(()=>{
+icones.mouseenter(()=>{
 
     icones.css("color" , "rgb(57, 8, 26)")
     
